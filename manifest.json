@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Minecraft Wiki Migration",
+    "version": "1.0",
+
+    "description": "This adds a warning when visiting the old Minecraft Wiki on Fandom.",
+
+    "content_scripts": [
+        {
+            "matches": ["*://*/*", "https://*/"],
+            "js": ["index.js"]
+        }
+    ]
+}
